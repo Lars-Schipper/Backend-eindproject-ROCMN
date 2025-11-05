@@ -125,7 +125,7 @@ function logBedrijfsData(info) {
 
 async function fetchinfo(ticker) {
     return new Promise((resolve, reject) => {
-        fetch(`https://api.polygon.io/v3/reference/tickers/${ticker}?apiKey=otqiRjNycnXK2N4KZdHIHoF8bgxHBXEd`)
+        fetch(`https://api.polygon.io/v3/reference/tickers/${ticker}?apiKey=~`)
             .then(res => res.json())
             .then(data => {
                 return resolve(data)
@@ -159,7 +159,7 @@ async function fetchDataForGraph(ticker, eenheid) {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '7551abfd87mshb4ccf83ccafe7e0p1609dajsn0e980eaf521c',
+            'x-rapidapi-key': '~',
             'x-rapidapi-host': 'apistocks.p.rapidapi.com'
         }
     };

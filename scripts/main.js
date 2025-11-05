@@ -1,6 +1,6 @@
 async function fetchStock() {
     return new Promise((resolve, reject) => {
-        // fetch(`https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=6661HLGHE00XWWSV`)
+        // fetch(`https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=~`)
         fetch("./json/winnersLosers.json")
             .then(res => res.json())
             .then(data => {
@@ -15,7 +15,7 @@ async function fetchnews(ticker) {
         method: 'GET'
     };
     var params = {
-        api_token: 'pmWu1KUVC19MyhtbezR16lTp21D0ZHu0RmySOEQa',
+        api_token: '~',
         symbols: ticker,
         limit: '3',
         language: 'en'
